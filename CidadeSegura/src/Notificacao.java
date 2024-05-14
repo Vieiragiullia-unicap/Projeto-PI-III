@@ -37,4 +37,18 @@ public class Notificacao extends Usuario {
         this.destinaratio = destinaratio;
     }
 
+    /*  
+    public String toString(){
+        return mensagem + " " + tipo + " " + dataHora + " " + destinaratio;
+    }
+    public boolean equals(Object obj){
+        if(obj instanceof Notificacao){
+            Notificacao n = (Notificacao) obj;
+            return this.mensagem == n.mensagem;
+        }
+        return false;
+    public int hashCode(){
+        return mensagem;
+    }  
+    */
 }
