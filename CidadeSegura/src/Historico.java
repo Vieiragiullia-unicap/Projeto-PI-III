@@ -1,23 +1,25 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Historico extends Incidente{
     public int id;
-    public ArrayList<inidente>
+    public List<Incidente> incidentes;
     
-    public Historico(int id, ArrayList<inidente>){
-        super(tipo, descricao, dataHora, gravidade, localidade);
+    public Historico.historico(int id, List<Incidente> incidentes){
         this.id = id;
-        this.inidente = inidente;
+        this.Incidente = incidentes;
     }
 
     public int getId(){
         return id;
     }
-    public ArrayList<inidente> getInidente(){
-        return inidente;
+    public List<Incidente> getInicdente(){
+        return incidentes;
     }
     public void setId(int id){
         this.id = id;
     }
-    public void setInidente(ArrayList<inidente> inidente){
-        this.inidente = inidente;
+    public void setIncidente(List<Incidente> incidentes){
+        this.incidentes = incidentes;
     }
 }
