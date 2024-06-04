@@ -7,9 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service; 
 
 import java.util.List;
-import java.util.Optional;
+//import java.util.Optional;
 
-import javax.security.auth.login.AccountNotFoundException;
+//import javax.security.auth.login.AccountNotFoundException;
 
 @Service
 public class AgenteService {
@@ -24,12 +24,12 @@ public class AgenteService {
 
     // metodo para listar todos os agentes
     public List<Agente> getAgenteAll() {
-        return AgenteRepository.findAll();
+        return AgenteRepository.getAll();
     }
 
     // metodo para buscar agente por id
     public Agente getAgenteById(Long id) {
-        return AgenteRepository.findById(id);
+        return AgenteRepository.getById(id);
     }
 
     // metodo para deletar agente por id

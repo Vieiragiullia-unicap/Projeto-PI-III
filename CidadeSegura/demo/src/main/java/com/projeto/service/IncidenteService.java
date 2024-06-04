@@ -6,7 +6,7 @@ import com.projeto.repository.IncidenteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service; 
 import java.util.List;
-import com.projeto.model.Incidente;
+// import com.projeto.model.Incidente;
 
 @Service
 public class IncidenteService {

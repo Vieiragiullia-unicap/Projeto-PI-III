@@ -16,10 +16,11 @@ public interface AgenteRepository extends JpaRepository<Agente,Long> {
     public List<Agente> getAll();
 
     // achar o agente pelo Id
+    @SuppressWarnings("null")
     public Agente getById(Long id);
 
     // deletar o agente pelo Id
-    public void deleteById(Long id);
+    public void deleteById(@SuppressWarnings("null") Long id);
 
     // atualizar o agente pelo Id
     public void updateById(Long id);

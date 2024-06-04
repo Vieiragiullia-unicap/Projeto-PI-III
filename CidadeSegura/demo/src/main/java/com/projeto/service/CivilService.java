@@ -1,7 +1,6 @@
 package com.projeto.service;
 
 //import com.projeto.exception.CivilNotFoundException;
-import com.projeto.exception.UserNotFoundException;
 import com.projeto.model.Civil;
 import com.projeto.repository.CivilRepository;
 import org.springframework.beans.factory.annotation.Autowired;

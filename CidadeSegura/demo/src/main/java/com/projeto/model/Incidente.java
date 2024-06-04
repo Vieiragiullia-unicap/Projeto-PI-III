@@ -44,6 +44,7 @@ public class Incidente {
     @Column(nullable = false)
     private String endereco;
 
+    // criar construtor para novo incidente
     public Incidente(String tipoIncidente, String descricao, Civil civil, String data, String endereco){
         this.tipoIncidente = tipoIncidente;
         this.descricao = descricao; 
@@ -51,7 +52,7 @@ public class Incidente {
         this.data = data;
         this.endereco = endereco;
     }
-    
+
 /* 
     public void setTipoIncidente(String tipoIncidente){
         this.tipoIncidente = tipoIncidente;
