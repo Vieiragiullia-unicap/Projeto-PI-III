@@ -51,13 +51,6 @@ public class Incidente {
         this.data = data;
         this.endereco = endereco;
     }
-
-    public Incidente(String tipoIncidente, String descricao, String data, String endereco){
-        this.tipoIncidente = tipoIncidente;
-        this.descricao = descricao;
-        this.data = data;
-        this.endereco = endereco;
-    }
     
 /* 
     public void setTipoIncidente(String tipoIncidente){
