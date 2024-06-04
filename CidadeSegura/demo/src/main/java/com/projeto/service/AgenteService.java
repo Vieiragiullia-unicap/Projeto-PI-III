@@ -23,7 +23,7 @@ public class AgenteService {
     }
 
     // metodo para listar todos os agentes
-    public List<Agente> getAllAgentes() {
+    public List<Agente> getAgenteAll() {
         return AgenteRepository.findAll();
     }
 
@@ -37,8 +37,33 @@ public class AgenteService {
         AgenteRepository.deleteById(id);
     }
 
+    // metodo para atualizar agente por id
+    public void updateAgenteById(Long id) {
+        AgenteRepository.updateById(id);
+    }
+
     // metodo para buscar agente pela instituição 
     public List<Agente> getAgenteByInstituicao(String instituicao) {
         return AgenteRepository.findByInstituicao(instituicao);
+    }
+
+    // metodo para buscar agente pelo nome
+    public List<Agente> getAgenteByNome(String nome) {
+        return AgenteRepository.findByNome(nome);
+    }
+
+    // metodo para achar o agente pelo email
+    public List<Agente> getAgenteByEmail(String email) {
+        return AgenteRepository.findByEmail(email);
+    }
+
+    // metodo para achar o agente pelo cpf
+    public List<Agente> getAgenteByCpf(String cpf) {
+        return AgenteRepository.findByCpf(cpf);
+    }
+
+    // metodo para deletar agente pelo cpf
+    public void deleteAgenteByCpf(String cpf) {
+        AgenteRepository.deleteByCpf(cpf);
     }
 }

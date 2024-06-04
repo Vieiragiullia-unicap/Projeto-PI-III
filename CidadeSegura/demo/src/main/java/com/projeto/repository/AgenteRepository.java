@@ -10,14 +10,14 @@ import java.util.Optional;
 @Repository
 public interface AgenteRepository extends JpaRepository<Agente,Long> {
 
-    // achar o agente pelo Id
-    public Agente getById(Long id);
+    // salvar o agente
+    public void saveAgente(Agente agente);
 
     // listar todos os agentes
     public List<Agente> getAll();
 
-    // salvar o agente
-    public void saveAgente(Agente agente);
+    // achar o agente pelo Id
+    public Agente getById(Long id);
 
     // deletar o agente pelo Id
     public void deleteById(Long id);
@@ -30,9 +30,6 @@ public interface AgenteRepository extends JpaRepository<Agente,Long> {
 
     // achar o agente pelo nome
     public List<Agente> findByNome(String nome);
-
-    // deletar o agente pelo nome
-    public void deleteByNome(String nome);
 
     // achar o agente pelo email
     public List<Agente> findByEmail(String email);
