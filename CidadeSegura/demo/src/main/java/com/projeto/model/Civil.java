@@ -71,7 +71,7 @@ public class Civil extends User {
         String endereco = s.nextLine();
         s.close();
 
-        Incidente incidente = new Incidente( tipoIncidente, descricao, data, endereco);
+        Incidente incidente = new Incidente(tipoIncidente, descricao, data,  endereco);
         incidente.setCivil(this); // Associa o incidente ao civil atual
         incidentes.add(incidente);
     }

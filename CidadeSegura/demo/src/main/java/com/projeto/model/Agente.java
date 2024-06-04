@@ -1,7 +1,5 @@
 package com.projeto.model;
 
-import java.util.List;
-
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -15,7 +13,7 @@ import lombok.*;
 
 
 @Table(name = "agentes")
-public class Agente extends User implements List<Agente> {
+public class Agente extends User {
     
     @Id 
     @GeneratedValue(strategy = GenerationType.IDENTITY)

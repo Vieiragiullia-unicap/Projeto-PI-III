@@ -1,6 +1,6 @@
 package com.projeto.service;
 
-import com.projeto.exception.AgenteNotFoundException;
+//import com.projeto.exception.AgenteNotFoundException;
 import com.projeto.model.Agente;
 import com.projeto.repository.AgenteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
